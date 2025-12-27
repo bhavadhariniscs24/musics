@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Musics</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <div class="logo">
+    <div class="dot"></div>
+    <span>Top Musics</span>
+  </div>
+
+  <nav>
+    <a class="active">Home</a>
+    <a>Search</a>
+    <a>Your Library</a>
+    <a>Top Charts</a>
+    <a>Favorites</a>
+  </nav>
+
+  <div class="actions">
+    <button>Create Album</button>
+    <button>Liked Songs</button>
+  </div>
+</aside>
+
+<!-- Main -->
+<main class="main">
+
+  <header class="header">
+    <h1>Top Musics For You</h1>
+  </header>
+
+  <!-- Quick Picks -->
+  <section class="row">
+    <h2>Your Favorites</h2>
+    <div class="grid">
+      <div class="card" onclick="play('Believer')">
+        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
+        <p>Believer</p>
+      </div>
+      <div class="card" onclick="play('Perfect')">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4">
+        <p>Perfect</p>
+      </div>
+      <div class="card" onclick="play('Blinding Lights')">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f">
+        <p>Blinding Lights</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Albums -->
+  <section class="row">
+    <h2>Create & Explore Albums</h2>
+    <div class="grid">
+      <div class="album">
+        <span>＋</span>
+        <p>Create Album</p>
+      </div>
+      <div class="album">
+        <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+        <p>Chill Mix</p>
+      </div>
+      <div class="album">
+        <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885">
+        <p>Workout</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Songs -->
+  <section class="row">
+    <h2>Top Songs</h2>
+    <div class="list">
+      <div class="song" onclick="play('Shape of You')">▶ Shape of You</div>
+      <div class="song" onclick="play('Thunder')">▶ Thunder</div>
+      <div class="song" onclick="play('Stay')">▶ Stay</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Player -->
+<footer class="player">
+  <div class="info">
+    <h3 id="now">Select a song</h3>
+  </div>
+
+  <div class="wave">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="controls">
+    ⏮ ⏯ ⏭
+  </div>
+</footer>
+
+</body>
+</html>
